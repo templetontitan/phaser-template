@@ -1,0 +1,37 @@
+<!doctype html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="UTF-8" />
+		<title>Phaser Tutorial</title>
+		<script type="text/javascript" src="js/phaser.min.js"></script>
+	</head>
+	
+	<body>
+
+		<script type="text/javascript">
+
+		var HEIGHT = 400;
+		var WIDTH = 400;
+
+		var game = new Phaser.Game(WIDTH, HEIGHT, Phaser.AUTO, 'hello-world-example', { preload: preload, create: create, update: update });
+
+
+		function preload() {
+			game.load.image('background', 'assets/images/sky.png');
+		}
+
+		function create() {
+			background = game.add.sprite(0, 0, 'background');
+			background.scale.setTo(4,4);
+		
+			var style = { font: "32px Arial", fill: "#ff0000", backgroundColor: "#ffff00" };
+			game.add.text(0, 0, "Hello World", style);
+		}
+
+		function update() {
+		}
+
+		</script>
+
+	</body>
+</html>
