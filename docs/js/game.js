@@ -1,7 +1,7 @@
 var HEIGHT = 400;
 var WIDTH = 400;
 
-var game = new Phaser.Game(WIDTH, HEIGHT, Phaser.AUTO, 'hello-world-example', {
+var game = new Phaser.Game(WIDTH, HEIGHT, Phaser.AUTO, 'phaser-template', {
   preload: preload, 
   create: create, 
   update: update}
